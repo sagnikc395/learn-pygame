@@ -32,7 +32,7 @@ def main():
 
 
     # font
-    test_font = pygame.font.Font(None,25)
+    test_font = pygame.font.Font("assets/Pixeltype.ttf",50)
 
     # text info
     text_surface = test_font.render("My game",False,"Red")

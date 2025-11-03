@@ -79,6 +79,9 @@ def main():
         snail_x_pos -= 4
         if snail_x_pos < 100:
             snail_x_pos = 800
+
+        global snail_suface
+        snail_surface.convert_alpha()
         screen.blit(snail_surface,(snail_x_pos,snail_y_pos))
                 
         # draw all our elements and update everything

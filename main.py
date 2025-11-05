@@ -56,13 +56,13 @@ def main():
         # place it on the display surface
         global snail_x_pos
         snail_x_pos -= 4
-        if snail_x_pos < 100:
+        if snail_x_pos < 0:
             snail_x_pos = 800
 
         global player_x_pos
-        player_x_pos -= 6
-        if player_x_pos < 100:
-            player_x_pos = 800
+        player_rect.left += 6
+        if player_rect.left > 800:
+            player_rect.center = (100,snail_y_pos)
 
         global snail_suface
         snail_surface.convert_alpha()

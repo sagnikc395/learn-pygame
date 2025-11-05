@@ -4,20 +4,25 @@ os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "Github Gameoff 2025"
 import pygame
 from sys import exit
 from constants import *
-
+#from loading_screen import *
 
 
 def main():
-    # instantiesaties pygame , play sounds and images
+    # instantiates pygame , play sounds and images
     # and other complicated stuff
     pygame.init()
 
+    #display the loading screen 
+    #show_loading_screen()
+
+    #load assets 
+    #load_game_assets()
 
     # font
     test_font = pygame.font.Font("assets/Pixeltype.ttf",50)
 
     # text info
-    text_surface = test_font.render("My game",False,"Red")
+    text_surface = test_font.render("Github GameOff 2025",False,"Green")
     
     # display the surface -> the window that the players are
     # gonna see
